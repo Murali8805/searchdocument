@@ -1,0 +1,47 @@
+[
+  {
+    "type": "tech",
+    "category": "Technical",
+    "name": "Terminal Instructables"
+  },
+  {
+    "type": "tech",
+    "category": "Technical",
+    "name": "Installation guides"
+  },
+  {
+    "type": "hr",
+    "category": "Human resources",
+    "name": "Career opportunities"
+  },
+  {
+    "type": "finance",
+    "category": "Financial",
+    "name": "Customer onboarding"
+  },
+  {
+    "type": "marketing",
+    "category": "Marketing",
+    "name": "Oulet branding"
+  },
+  {
+    "type": "finance",
+    "category": "Financial",
+    "name": "Accounting procedures"
+  },
+  {
+    "type": "hr",
+    "category": "Human resources",
+    "name": "Training"
+  },
+  {
+    "type": "marketing",
+    "category": "Marketing",
+    "name": "Printing guidance"
+  },
+  {
+    "type": "tech",
+    "category": "Technical",
+    "name": "Technical support"
+  }
+]

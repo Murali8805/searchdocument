@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="title">Documents</h1>
+  <h2 class="sub-title">Search document or select category</h2>
+  <div class="search-container">
+    <section class="menu-section">
+      <ul>
+        <ng-container *ngFor="let menu of menus">
+          <li
+            (click)="filterCategory(menu.id)"
+            [ngClass]="{ active: menu.id === selectedId }"
+          >
+            {{ menu.name }}
+          </li>
+        </ng-container>
+      </ul>
+    </section>
+    <section class="search-section">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Start typing document name..."
+        [(ngModel)]="searchText"
+      />
+      <div class="search-content">
+        <ng-container *ngIf="filterCategoryData | filter: searchText as data">
+          <div *ngFor="let item of data" class="card">
+            <h3 class="category" [ngClass]="item?.type">{{ item.category }}</h3>
+            <p class="document-name">{{ item.name }}</p>
+          </div>
+          <p class="no-result" *ngIf="data.length === 0">Data not found</p>
+        </ng-container>
+      </div>
+    </section>
+  </div>
+</div>
